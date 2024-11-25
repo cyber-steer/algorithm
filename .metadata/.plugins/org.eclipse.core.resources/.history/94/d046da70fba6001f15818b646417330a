@@ -1,0 +1,15 @@
+package input_output;
+
+import java.util.Scanner;
+
+public class TreePlus {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.nextLine();
+		float a = Float.parseFloat(input.split(" ")[0]);
+		float b = Float.parseFloat(input.split(" ")[1]);
+		float c = Float.parseFloat(input.split(" ")[2]);
+		System.out.println(a+b+c);
+		scanner.close();
+	}
+}

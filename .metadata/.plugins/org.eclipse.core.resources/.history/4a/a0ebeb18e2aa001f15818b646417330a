@@ -1,0 +1,29 @@
+package deepening.first;
+
+import java.util.Hashtable;
+import java.util.Scanner;
+
+public class Word {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.nextLine();
+		input = input.toUpperCase();
+		int[] table = new int[26];
+		for(int i=0; i<input.length(); i++) {
+			int n = (int) input.charAt(i);
+			n -= 65;
+			table[n]++;
+		}
+		int max = -1;
+		int idx;
+		for(int i=0; i<26; i++) {
+			if(max < table[i]) {
+				max = table[i];
+				idx = i;
+			}
+		}
+		char c = 64+idx;
+		System.out.println(c);
+		scanner.close();
+	}
+}

@@ -1,0 +1,31 @@
+package math.first;
+
+import java.util.Scanner;
+
+public class Laundry {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		scanner.nextLine();
+		int[][] coins = new int[n][4];
+		for(int i=0; i<n; i++) {
+			int money = scanner.nextInt();
+			scanner.nextLine();
+			
+			coins[i][0] = money/25;
+			money = money - coins[i][0]*25;
+			coins[i][1] = money/10;
+			money = money - coins[i][1]*10;
+			coins[i][2] = money/5;
+			money = money - coins[i][2]*5;
+			coins[i][3] = money;
+		}
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<4; j++) {
+				System.out.print(coins[i][j] +" ");
+			}
+			System.out.println();
+		}
+		scanner.close();
+	}
+}

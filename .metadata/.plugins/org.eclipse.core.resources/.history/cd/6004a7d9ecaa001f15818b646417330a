@@ -1,0 +1,14 @@
+package metrics;
+
+import java.util.Scanner;
+
+public class Plus {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String[] inputs = scanner.nextLine().split(" ");
+		int n = Integer.parseInt(inputs[0]);
+		int m = Integer.parseInt(inputs[1]);
+		int[][] arr1 = new int[n][m];
+		int[][] arr2 = new int[n][m];
+	}
+}

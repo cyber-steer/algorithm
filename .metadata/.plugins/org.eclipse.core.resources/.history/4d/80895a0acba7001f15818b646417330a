@@ -1,0 +1,13 @@
+package string;
+
+import java.util.Scanner;
+
+public class CahrAndString {
+	public static void main(StringFirstEnd[] args) {
+		Scanner scanner = new Scanner(System.in);
+		StringFirstEnd str = scanner.nextLine();
+		int idx = scanner.nextInt()-1;
+		System.out.println(str.charAt(idx));
+		scanner.close();
+	}
+}

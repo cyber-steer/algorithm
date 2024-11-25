@@ -1,0 +1,15 @@
+package outer;
+
+import java.util.Scanner;
+
+public class Step {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int stepCount = scanner.nextInt();
+		scanner.close();
+		int[] stairs = new int[stepCount];
+		for(int i=0; i<stepCount; i++) {
+			
+		}
+	}
+}

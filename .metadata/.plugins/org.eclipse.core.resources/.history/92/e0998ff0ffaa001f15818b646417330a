@@ -1,0 +1,14 @@
+package outer;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Step {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int i = scanner.nextInt();
+		String str = scanner.nextLine();
+		System.out.println(i);
+		System.out.println(str);
+	}
+}

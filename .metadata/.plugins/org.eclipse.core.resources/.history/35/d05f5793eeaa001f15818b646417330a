@@ -1,0 +1,21 @@
+package metrics;
+
+import java.util.Scanner;
+
+public class Vertical {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String result;
+		char[][] table = new char[5][15];
+		for(int i=0; i<5; i++) {
+			
+		}
+		for(int i=0; i<5; i++) {
+			for(int j=0; j<15; j++) {
+				table[i][j] = ''-';
+				System.out.print(table[i][j]);
+			}
+			System.out.println();
+		}
+	}
+}

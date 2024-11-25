@@ -1,0 +1,11 @@
+package loop;
+
+import java.io.BufferedWriter;
+import java.io.OutputStreamWriter;
+
+public class FastAPlusB {
+	public static void main(String[] args) {
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+	}
+}

@@ -1,0 +1,51 @@
+package outer;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Step {
+	public static void main(String[] args) {
+//		Scanner scanner = new Scanner(System.in);
+//		int stepCount = scanner.nextInt();
+//		scanner.nextLine();
+//		int[] stairs = new int[stepCount];
+//		for(int i=0; i<stepCount; i++) {
+//			stairs[i] = scanner.nextInt();
+//			scanner.nextLine();
+//		}
+		int[] stairs = {6, 10, 20, 15, 25, 10, 20};
+		int stepCount = 6;
+		int maxScore = -1;
+
+		Stack<Integer> stack = new Stack<Integer>();
+		int count = 0;
+		int score = 0;
+		int step =1;
+		int idx = 0;
+		for(;;) {
+			stack.push(step);
+			if(idx == stepCount && maxScore<stairs[idx]) {
+				maxScore = score;
+			}
+			if(idx >= stepCount-1) {
+				int stackStep = stack.pop();
+				step = stackStep;
+				score = 0;
+			}
+			if(stack.empty()) {
+				break;
+			}
+			score += stairs[idx];
+			if(count ==1) {
+				count =0;
+				step = 2;
+			}
+			else {
+				count++;
+				step = 1;
+			}
+			idx += step;
+		}
+		System.out.println(maxScore);
+	}
+}

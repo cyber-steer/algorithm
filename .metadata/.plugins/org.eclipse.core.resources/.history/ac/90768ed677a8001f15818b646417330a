@@ -1,0 +1,14 @@
+package str;
+
+import java.util.Scanner;
+
+public class Alphabet {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String str = scanner.nextLine();
+		for(int i=65; i<65+26; i++) {
+			char c = (char) i;
+			System.out.print(c);
+		}
+	}
+}

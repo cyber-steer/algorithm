@@ -1,0 +1,15 @@
+package deepening.first;
+
+import java.util.Scanner;
+
+public class GroupWord {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		scanner.nextLine();
+		for(int i=0; i<n; i++) {
+			String input = scanner.nextLine();
+		}
+		scanner.close();
+	}
+}

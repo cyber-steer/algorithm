@@ -1,0 +1,18 @@
+package deepening.first;
+
+import java.util.Hashtable;
+import java.util.Scanner;
+
+public class Word {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.nextLine();
+		Hashtable<Character, Integer> table = new Hashtable<Character, Integer>();
+		input = input.toUpperCase();
+		for(int i=0; i<input.length(); i++) {
+			char c = input.charAt(i);
+			char r= table.get(c);
+		}
+		scanner.close();
+	}
+}

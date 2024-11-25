@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;step/src/input_output&apos;&#x0D;&#x0A;- Original project: &apos;input_output&apos;&#x0D;&#x0A;- Destination element: &apos;step/src/input_output&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     input_output.A_plus_B.java&#x0D;&#x0A;     input_output.Hello_World.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=step/src&lt;input_output" element1="/src&lt;input_output{A_plus_B.java" element2="/src&lt;input_output{Hello_World.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1731981341899" units="2" version="1.0"/>
+</session>

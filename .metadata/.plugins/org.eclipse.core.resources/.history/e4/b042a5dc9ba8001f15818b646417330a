@@ -1,0 +1,18 @@
+package str;
+
+import java.util.Scanner;
+
+public class Call {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.nextLine();
+		int result = 0;
+		for(int i=0; i<input.length(); i++) {
+			int n = (int) input.charAt(i);
+			n -= 95
+			System.out.println(n);
+		}
+		System.out.println(result);
+		scanner.close();
+	}
+}

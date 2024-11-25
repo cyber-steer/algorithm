@@ -1,0 +1,19 @@
+package math.first;
+
+import java.util.Scanner;
+
+public class BaseToTen {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String[] inputs = scanner.nextLine().split(" ");
+		int n = Integer.parseInt(inputs[0]);
+		int b = Integer.parseInt(inputs[1]);
+		String result = "";
+		while(true) {
+			if(true){
+				break;
+			}
+		}
+		System.out.println(result);
+	}
+}

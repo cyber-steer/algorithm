@@ -1,0 +1,15 @@
+package str;
+
+import java.util.Scanner;
+
+public class Static {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String[] inputs = scanner.nextLine().split(" ");
+		for(int i=0; i<2; i++) {
+			inputs[0] = String.valueOf(inputs[0].charAt(2) + inputs[0].charAt(1) + inputs[0].charAt(0));
+			inputs[1] = String.valueOf(inputs[1].charAt(2) + inputs[1].charAt(1) + inputs[1].charAt(0));
+		}
+		
+	}
+}
