@@ -1,0 +1,31 @@
+package math.first;
+
+import java.util.Scanner;
+
+public class Snail {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String[] inputs = scanner.nextLine().split(" ");
+		int a = Integer.parseInt(inputs[0]);
+		int b = Integer.parseInt(inputs[1]);
+		int v = Integer.parseInt(inputs[2]);
+		
+		v -= a;
+		int move = a-b;
+		float day = (float)v/move;
+		System.out.println(day);
+		if(day>1) {
+			day++;
+		}
+		day++;
+		System.out.println(day);
+		scanner.close();
+		
+		if(10/2==5) {
+			System.out.println("true");
+		}
+		else {
+			System.out.println("false");
+		}
+	}
+}

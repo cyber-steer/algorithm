@@ -1,0 +1,14 @@
+package geometry;
+
+import java.util.Scanner;
+
+public class RectangleEscape {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String[] inputs = scanner.nextLine().split(" ");
+		int x = Integer.parseInt(inputs[0]);
+		int y = Integer.parseInt(inputs[1]);
+		int w = Integer.parseInt(inputs[2]);
+		int h = Integer.parseInt(inputs[3]);
+	}
+}

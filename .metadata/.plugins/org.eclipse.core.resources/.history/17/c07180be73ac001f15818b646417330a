@@ -1,0 +1,10 @@
+package geometry;
+
+import java.util.Scanner;
+
+public class Dot {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String[] inputs = scanner.nextLine().split(" ");
+	}
+}

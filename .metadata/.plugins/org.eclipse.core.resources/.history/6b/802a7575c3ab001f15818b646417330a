@@ -1,0 +1,20 @@
+package geometry;
+
+import java.util.Scanner;
+
+public class RectangleEscape {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String[] inputs = scanner.nextLine().split(" ");
+		int x = Integer.parseInt(inputs[0]);
+		int y = Integer.parseInt(inputs[1]);
+		int w = Integer.parseInt(inputs[2]);
+		int h = Integer.parseInt(inputs[3]);
+		
+		int a = x<=w/2?x:w-x;
+		int b = y<=h/2?h:h-y;
+		int min = a<b?a:b;
+		System.out.println(min);
+		scanner.close();
+	}
+}

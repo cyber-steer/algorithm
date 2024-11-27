@@ -1,0 +1,7 @@
+package geometry;
+
+public class Dot {
+	public static void main(String[] args) {
+		
+	}
+}

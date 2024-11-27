@@ -1,0 +1,28 @@
+package number.first;
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int m = scanner.nextInt();
+		int n = scanner.nextInt();
+		
+		int prime = -1;
+		int sum = 0;
+		for(int i=m; i<=n; i++) {
+			boolean check = true;
+			for(int j=1; j<=i; j++) {
+				if(i%j==0) {
+					check = false;
+					break;
+				}
+			}
+			if(check) {
+				sum += i;				
+			}
+		}
+		System.out.println(sum);
+		scanner.close();
+	}
+}

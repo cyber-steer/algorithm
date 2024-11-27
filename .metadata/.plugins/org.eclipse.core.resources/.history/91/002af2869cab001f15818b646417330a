@@ -1,0 +1,16 @@
+package math.first;
+
+import java.util.Scanner;
+
+public class Center {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		System.out.println(2+(2*n-1)*(2*n-1));
+		
+	}
+}
+4 9 25
+2+2n-1^2
+4
+9
