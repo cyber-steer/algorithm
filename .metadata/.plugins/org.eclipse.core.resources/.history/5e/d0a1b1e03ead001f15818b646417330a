@@ -15,7 +15,8 @@ public class Earth {
 			minX = minX>x? x: minX;
 			maxX = maxX<x? x: maxX;
 			minY = minY>y? y: minY;
-			maxY = maxY<y? y: maxY;
+			maxY = maxY<x? y: maxY;
+			System.out.println(maxX+" "+minX+" "+maxY+" "+minY);
 		}
 		System.out.println((maxX-minX)*(maxY-minY));
 		scanner.close();
