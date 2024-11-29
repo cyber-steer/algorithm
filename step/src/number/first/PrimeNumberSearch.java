@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class PrimeNumberSearch {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int n = scanner.nextInt();
 		scanner.nextLine();
 		String[] inputs = scanner.nextLine().split(" ");
 		int count = 0;

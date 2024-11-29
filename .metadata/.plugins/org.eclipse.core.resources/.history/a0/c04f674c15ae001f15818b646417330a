@@ -1,0 +1,19 @@
+package brute;
+
+import java.util.Scanner;
+
+public class Decomposition {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		long n = scanner.nextLong();
+		long min = 1000001;
+		for(long i = 1; i<=n; i++) {
+			long temp = i;
+			long z;
+			for(z=123456;z>0;z /=10) {
+				System.out.println(z);
+			}
+			System.out.println(z);
+		}
+	}
+}

@@ -1,0 +1,14 @@
+package time;
+
+import java.util.Scanner;
+
+public class Time5 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		for(n=1; n<=10; n++) {
+			
+		}
+		scanner.close();
+	}
+}

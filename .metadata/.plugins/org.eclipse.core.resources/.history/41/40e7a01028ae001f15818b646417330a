@@ -1,0 +1,18 @@
+package brute;
+
+import java.util.Scanner;
+
+public class Movie {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		int count = 0;
+		int i;
+		for(i=1;;i++) {
+			if(n==count) {
+				break;
+			}
+		}
+		System.out.println(i);
+	}
+}

@@ -1,0 +1,16 @@
+package time;
+
+import java.util.Scanner;
+
+public class Time4 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		long n = scanner.nextLong();
+		int count = 0;
+		for(long i=n; i>0; i--) {
+			count+=i;
+		}
+		System.out.println(count);
+		scanner.close();
+	}
+}

@@ -1,0 +1,22 @@
+package time;
+
+import java.util.Scanner;
+
+public class Time6 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		long n = scanner.nextLong();
+		for(n=1; n<=20; n++) {
+			int count =0;
+			for(int i=1; i<=n-2; i++) {
+				for(int j=i+1; j<=n-1; j++) {
+					for(int k=j+1; k<=n;k++) {
+						count++;
+					}
+				}
+			}
+			System.out.println("["+n+"] "+count);
+		}
+		scanner.close();
+	}
+}

@@ -1,0 +1,33 @@
+package brute;
+
+import java.util.Scanner;
+
+public class Movie {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		int count = 0;
+		int i;
+		for(i=666;;i++) {
+			String num = i+"";
+			int sixCount = 0;
+			for(int j =0; j<num.length()-1; j++) {
+				if(num.charAt(j) == '6') {
+					sixCount++;
+				}
+				if(sixCount>2) {
+					break;
+				}
+			}
+			if(sixCount>2) {
+				System.out.println(i);
+				count++;
+			}
+			if(n==count) {
+				break;
+			}
+		}
+		System.out.println(i);
+		scanner.close();
+	}
+}
